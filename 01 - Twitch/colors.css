@@ -1,0 +1,16 @@
+:root {
+  --dark-grey: #18181b;
+  --transparent-grey: rgba(24, 24, 27, 0.7);
+
+  --side-grey: #1f1f23;
+  --back-grey: #0e0e10;
+  --text-tag: #adadb8;
+
+  --hover-grey: #67676b;
+  --btn-grey: #35353b;
+  --btn-hover: #45454b;
+
+  --circle: #eb0400;
+
+  --twitch: #bf94ff;
+}

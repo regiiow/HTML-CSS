@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitch</title>
+
+    <!-- ICONS -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--  FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./colors.css" />
+    <link rel="stylesheet" href="./global.css" />
+
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="./imgs/logo-twitch.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <!-- LEFT-ITEMS -->
+      <div class="left-items">
+        <img src="./imgs/logo-twitch.png" alt="twitch" class="twitch-logo" />
+        <a href="#">Seguindo</a>
+        <a href="#">Procurar</a>
+        <a href="#"
+          ><ion-icon name="ellipsis-vertical" class="option icon"></ion-icon
+        ></a>
+      </div>
+
+      <!-- SEARCH-BAR -->
+      <div class="search-bar">
+        <input
+          name="search-bar"
+          type="text"
+          placeholder="Buscar"
+          class="search"
+        />
+
+        <div class="div-search">
+          <ion-icon name="search" class="search-icon"></ion-icon>
+        </div>
+      </div>
+
+      <!-- RIGHT-ITEMS -->
+      <div class="right-items">
+        <a href="#"><ion-icon name="hardware-chip" class="icon"></ion-icon></a>
+        <a href="#"
+          ><ion-icon name="mail-unread-outline" class="icon"></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon name="chatbox-outline" class="icon"></ion-icon
+        ></a>
+        <a href="#"> <ion-icon name="diamond" class="icon"></ion-icon></a>
+        <a class="watch" href="#">
+          <ion-icon name="battery-charging" class="battery"></ion-icon>
+          <p>Assista sem anúncios</p>
+        </a>
+
+        <!-- PROFILE -->
+        <div class="profile">
+          <img src="./imgs/profile.png" alt="" class="profile-img" />
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <aside class="left-bar">
+        <div class="for-you">
+          <h1>Para você</h1>
+          <svg
+            width="20"
+            height="20"
+            version="1.1"
+            viewBox="0 0 20 20"
+            x="0px"
+            y="0px"
+            role="presentation"
+            aria-hidden="true"
+            focusable="false"
+            class="foryou-icon"
+          >
+            <g>
+              <path
+                d="M16 16V4h2v12h-2zM6 9l2.501-2.5-1.5-1.5-5 5 5 5 1.5-1.5-2.5-2.5h8V9H6z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+
+        <!-- CANAIS SEGUIDOS -->
+        <div class="left-channels">
+          <div class="channels-followed">
+            <h2 class="chn-follow">CANAIS SEGUIDOS</h2>
+            <svg width="20" height="20" viewBox="0 0 20 20" class="foryou-icon">
+              <path
+                d="M11 6 7 2 3 6l1.5 1.5L6 6v6h2V6l1.5 1.5L11 6Zm6 8-4 4-4-4 1.5-1.5L12 14V8h2v6l1.5-1.5L17 14Z"
+              ></path>
+            </svg>
+          </div>
+
+          <!-- GAULES -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/gaules.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">Gaules</h2>
+                <h3 class="streamer-game">We Were Here Forever</h3>
+              </div>
+            </div>
+            <div class="views">
+              <div class="on-air"></div>
+              <span>12,6 mil</span>
+            </div>
+          </div>
+
+          <!-- LIMINHA -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/liminha.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">liminhag0d</h2>
+                <h3 class="streamer-game">Tom Clancy's Rainbow Six Siege</h3>
+              </div>
+            </div>
+            <div class="views">
+              <div class="on-air"></div>
+              <span>1,6 mil</span>
+            </div>
+          </div>
+
+          <!-- BT0TV -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/bt0tv.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">bt0tv</h2>
+                <h3 class="streamer-game">We Were Here Forever</h3>
+              </div>
+            </div>
+            <div class="views">
+              <div class="on-air"></div>
+              <span>1,3 mil</span>
+            </div>
+          </div>
+
+          <!-- PAULA NOBRE -->
+          <div class="streamer">
+            <div class="content">
+              <img
+                src="./imgs/streamers/paulanobre.png"
+                alt=""
+                class="left-img"
+              />
+
+              <div class="channel">
+                <h2 class="streamer-name">paulanobre</h2>
+                <h3 class="streamer-game">VALORANT</h3>
+              </div>
+            </div>
+            <div class="views">
+              <div class="on-air"></div>
+              <span>1,2 mil</span>
+            </div>
+          </div>
+
+          <!-- Michel -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/michel.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">Michel</h2>
+                <h3 class="streamer-game">Counter-Strike</h3>
+              </div>
+            </div>
+            <div class="views">
+              <div class="on-air"></div>
+              <span>157</span>
+            </div>
+          </div>
+
+          <!-- ALE_APOKA -->
+          <div class="streamer">
+            <div class="content">
+              <img
+                src="./imgs/streamers/ale_apoka.png"
+                alt=""
+                class="left-img"
+              />
+
+              <div class="channel">
+                <h2 class="streamer-name">ale_apoka</h2>
+                <h3 class="streamer-game">God of War</h3>
+              </div>
+            </div>
+            <div class="views">
+              <div class="on-air"></div>
+              <span>114</span>
+            </div>
+          </div>
+
+          <!-- Vero_sM2 -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/verosm2.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">Vero_sM2</h2>
+                <h3 class="streamer-game">VALORANT</h3>
+              </div>
+            </div>
+            <div class="views">
+              <div class="on-air"></div>
+              <span>37</span>
+            </div>
+          </div>
+
+          <!-- BTSBrasilFPS -->
+          <div class="streamer">
+            <div class="content">
+              <img
+                src="./imgs/streamers/btsbrasil.png"
+                alt=""
+                class="left-img"
+              />
+
+              <div class="channel">
+                <h2 class="streamer-name">BTSBrasilFPS</h2>
+                <h3 class="streamer-game">Counter-Strike</h3>
+              </div>
+            </div>
+            <div class="views">
+              <div class="on-air"></div>
+              <span>31</span>
+            </div>
+          </div>
+
+          <!-- RAYANABAINY -->
+          <div class="streamer">
+            <div class="content">
+              <img
+                src="./imgs/streamers/rayana.png"
+                alt=""
+                class="left-img off-img"
+              />
+
+              <div class="channel">
+                <h2 class="streamer-name">RayanaBainy</h2>
+              </div>
+            </div>
+            <div class="views">
+              <span>Offline</span>
+            </div>
+          </div>
+        </div>
+        <!-- SHOW-MORE -->
+        <div class="more">
+          <a class="show-more" href="#">Mostrar mais</a>
+        </div>
+
+        <!-- RECOMENDED-CHANNELS -->
+        <div class="left-channels">
+          <div class="channels-followed">
+            <h2 class="chn-follow">CANAIS RECOMENDADOS</h2>
+          </div>
+
+          <!-- RAINBOW6BR -->
+          <div class="streamer">
+            <div class="content">
+              <img
+                src="./imgs/streamers/rainbow6.png"
+                alt=""
+                class="left-img"
+              />
+
+              <div class="channel">
+                <h2 class="streamer-name">Rainbow6BR</h2>
+                <h3 class="streamer-game">Tom Clancy's Rainbow Six Siege</h3>
+              </div>
+            </div>
+            <div class="views">
+              <div class="on-air"></div>
+              <span>6,6 mil</span>
+            </div>
+          </div>
+
+          <!-- XAROLA_L -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/xarola.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">XAROLA_</h2>
+                <h3 class="streamer-game">VALORANT</h3>
+              </div>
+            </div>
+
+            <div class="views">
+              <div class="on-air"></div>
+              <span>2,6 mil</span>
+            </div>
+          </div>
+
+          <!-- FRTT -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/frtt.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">frtt</h2>
+                <h3 class="streamer-game">XDefiant</h3>
+              </div>
+            </div>
+
+            <div class="views">
+              <div class="on-air"></div>
+              <span>2,1 mil</span>
+            </div>
+          </div>
+
+          <!-- PEACEMAKERL -->
+          <div class="streamer">
+            <div class="content">
+              <img
+                src="./imgs/streamers/peacemaker.png"
+                alt=""
+                class="left-img"
+              />
+
+              <div class="channel">
+                <h2 class="streamer-name">peacemakerL</h2>
+                <h3 class="streamer-game">Counter-Strike</h3>
+              </div>
+            </div>
+
+            <div class="views">
+              <div class="on-air"></div>
+              <span>661</span>
+            </div>
+          </div>
+
+          <!-- BETBOOMBRASIL -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/betboom.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">betboombrasil</h2>
+                <h3 class="streamer-game">Counter-Strike</h3>
+              </div>
+            </div>
+
+            <div class="views">
+              <div class="on-air"></div>
+              <span>276</span>
+            </div>
+          </div>
+
+          <!-- FELIPEIRAON -->
+          <div class="streamer">
+            <div class="content">
+              <img
+                src="./imgs/streamers/felipeira.png"
+                alt=""
+                class="left-img"
+              />
+
+              <div class="channel">
+                <h2 class="streamer-name">felipeiraon</h2>
+                <h3 class="streamer-game">Counter-Strike</h3>
+              </div>
+            </div>
+
+            <div class="views">
+              <div class="on-air"></div>
+              <span>167</span>
+            </div>
+          </div>
+
+          <!-- SHOW-MORE -->
+          <div class="more">
+            <a class="show-more" href="#">Mostrar mais</a>
+          </div>
+        </div>
+
+        <!-- RECOMENDED-CHANNELS -->
+        <div class="left-channels">
+          <div class="channels-followed">
+            <h2 class="chn-follow">CANAIS RECOMENDADOS</h2>
+          </div>
+
+          <!-- RAINBOW6BR -->
+          <div class="streamer">
+            <div class="content">
+              <img
+                src="./imgs/streamers/rainbow6.png"
+                alt=""
+                class="left-img"
+              />
+
+              <div class="channel">
+                <h2 class="streamer-name">Rainbow6BR</h2>
+                <h3 class="streamer-game">Tom Clancy's Rainbow Six Siege</h3>
+              </div>
+            </div>
+            <div class="views">
+              <div class="on-air"></div>
+              <span>6,6 mil</span>
+            </div>
+          </div>
+
+          <!-- XAROLA_L -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/xarola.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">XAROLA_</h2>
+                <h3 class="streamer-game">VALORANT</h3>
+              </div>
+            </div>
+
+            <div class="views">
+              <div class="on-air"></div>
+              <span>2,6 mil</span>
+            </div>
+          </div>
+
+          <!-- FRTT -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/frtt.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">frtt</h2>
+                <h3 class="streamer-game">XDefiant</h3>
+              </div>
+            </div>
+
+            <div class="views">
+              <div class="on-air"></div>
+              <span>2,1 mil</span>
+            </div>
+          </div>
+
+          <!-- PEACEMAKERL -->
+          <div class="streamer">
+            <div class="content">
+              <img
+                src="./imgs/streamers/peacemaker.png"
+                alt=""
+                class="left-img"
+              />
+
+              <div class="channel">
+                <h2 class="streamer-name">peacemakerL</h2>
+                <h3 class="streamer-game">Counter-Strike</h3>
+              </div>
+            </div>
+
+            <div class="views">
+              <div class="on-air"></div>
+              <span>661</span>
+            </div>
+          </div>
+
+          <!-- BETBOOMBRASIL -->
+          <div class="streamer">
+            <div class="content">
+              <img src="./imgs/streamers/betboom.png" alt="" class="left-img" />
+
+              <div class="channel">
+                <h2 class="streamer-name">betboombrasil</h2>
+                <h3 class="streamer-game">Counter-Strike</h3>
+              </div>
+            </div>
+
+            <div class="views">
+              <div class="on-air"></div>
+              <span>276</span>
+            </div>
+          </div>
+
+          <!-- FELIPEIRAON -->
+          <div class="streamer">
+            <div class="content">
+              <img
+                src="./imgs/streamers/felipeira.png"
+                alt=""
+                class="left-img"
+              />
+
+              <div class="channel">
+                <h2 class="streamer-name">felipeiraon</h2>
+                <h3 class="streamer-game">Counter-Strike</h3>
+              </div>
+            </div>
+
+            <div class="views">
+              <div class="on-air"></div>
+              <span>167</span>
+            </div>
+          </div>
+
+          <!-- SHOW-MORE -->
+          <div class="more">
+            <a class="show-more" href="#">Mostrar mais</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- CENTER-BAR -->
+      <div class="center-bar">
+        <div class="up-content bottom-space">
+          <img src="./imgs/banner-test.png" alt="" class="banner-test" />
+        </div>
+
+        <div class="down-content">
+          <div class="live-channels">
+            <h2 class="center-text">
+              <span class="purple-text">Canais ao vivo</span> que achamos que
+              você vai gostar
+            </h2>
+
+            <!-- CHANNELS LIVE -->
+            <div class="live">
+              <!-- CHANNEL 1 -->
+              <div class="channel-card chn-1">
+                <div class="live-img">
+                  <img
+                    src="./imgs/stream/channel-1.jpg"
+                    alt="liminhagod"
+                    class="channel-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="channel-content">
+                  <img
+                    src="./imgs/streamers/liminha.png"
+                    alt="liminhagod"
+                    class="channel-profile-img"
+                  />
+
+                  <div class="live-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">
+                        AOVIVO CS COM BT !SUBGRATIS !farmskins !rivalry !gcsolo
+                      </h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">liminhag0d</span>
+
+                    <span class="live-subtitle game">Counter-Strike</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Português</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CHANNEL 2 -->
+              <div class="channel-card chn-2">
+                <div class="live-img">
+                  <img
+                    src="./imgs/stream/channel-2.jpg"
+                    alt="betboom"
+                    class="channel-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="channel-content">
+                  <img
+                    src="./imgs/streamers/betboom.png"
+                    alt=""
+                    class="channel-profile-img"
+                  />
+
+                  <div class="live-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">
+                        Space (0) vs (1) 9 Pandas - Playoffs - 🏆 CCT Europe S2
+                        - Online Series #3 - @reeh @backdoorfps
+                      </h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">betboombrasil</span>
+
+                    <span class="live-subtitle game">Counter-Strike</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">campeonato</a>
+                      <a href="#" class="live-category">CS2</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CHANNEL 3 -->
+              <div class="channel-card chn-3">
+                <div class="live-img">
+                  <img
+                    src="./imgs/stream/channel-3.jpg"
+                    alt="bt0tv"
+                    class="channel-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="channel-content">
+                  <img
+                    src="./imgs/streamers/bt0tv.png"
+                    alt=""
+                    class="channel-profile-img"
+                  />
+
+                  <div class="live-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">
+                        AO VIVO: Top 1 gc na mira // !rivalry !farmskins !bleik
+                        !sorteio
+                      </h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">bt0tv</span>
+
+                    <span class="live-subtitle game">Counter-Strike</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Português</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CHANNEL 4 -->
+              <div class="channel-card chn-4">
+                <div class="live-img">
+                  <img
+                    src="./imgs/stream/channel-4.jpg"
+                    alt="xarola"
+                    class="channel-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="channel-content">
+                  <img
+                    src="./imgs/streamers/xarola.png"
+                    alt="xarola"
+                    class="channel-profile-img"
+                  />
+
+                  <div class="live-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">
+                        O MELHOR YORU DO MUNDO EM AÇÃO || !RIVALRY !ONLYPADS
+                        !FURIA
+                      </h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">XAROLA_</span>
+
+                    <span class="live-subtitle game">VALORANT</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">yoru</a>
+                      <a href="#" class="live-category">humor</a>
+                      <a href="#" class="live-category">Nordeste</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CHANNEL 5 -->
+              <div class="channel-card chn-5">
+                <div class="live-img">
+                  <img
+                    src="./imgs/stream/channel-5.jpg"
+                    alt="Gaules"
+                    class="channel-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="channel-content">
+                  <img
+                    src="./imgs/streamers/gaules.png"
+                    alt="Gaules"
+                    class="channel-profile-img"
+                  />
+
+                  <div class="live-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">
+                        Rerun: Mula party - Logo o Gau está de volta diretamente
+                        do México! - Siga Gaules nas redes sociais!
+                      </h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">Gaules</span>
+
+                    <span class="live-subtitle game">Pummel Party</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Português</a>
+                      <a href="#" class="live-category">brazil</a>
+                      <a href="#" class="live-category">Portugues</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="categories-youlike">
+            <h2 class="center-text">
+              <span class="purple-text">Canais ao vivo</span> que achamos que
+              você vai gostar
+            </h2>
+
+            <div class="live">
+              <!-- CATEGORY 1 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/counterstrike.png"
+                    alt="Counter Strike"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Counter Strike</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">88,9 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">FPS</a>
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 2 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/sonaconversa.jpg"
+                    alt="Só Na Conversa"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Só Na Conversa</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">305,7 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Vida Real</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 3 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/minecraft.jpg"
+                    alt="Minecraft"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Minecraft</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">65,7 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Simulação</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 4 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/valorant.jpg"
+                    alt="Valorant"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Valorant</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">99,8 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">FPS</a>
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 5 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/dota2.png"
+                    alt="Dota 2"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Dota 2</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">58,7 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Estratégia</a>
+                      <a href="#" class="live-category">MOBA</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 6 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/gta5.jpg"
+                    alt="Grand Theft Auto 5"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Grand Theft Auto 5</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">199,9 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">FPS</a>
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 7 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/fortnite.jpg"
+                    alt="Fortnite"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Fortnite</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">138,5 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                      <a href="#" class="live-category">RPG</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 8 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/leagueoflegends.png"
+                    alt="League of Legends"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">League of Legends</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">139,3 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">RPG</a>
+                      <a href="#" class="live-category">Estratégia</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 9 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/pubg.png"
+                    alt="PUBG: BATTLEGROUNDS"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">PUBG: BATTLEGROUNDS</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">14,4 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">FPS</a>
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 10 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/rainbowsixsiege.jpg"
+                    alt="Tom Clancy's Rainbow Six Siege"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Tom Clancy's Rainbow Six Siege</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">305,7 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">FPS</a>
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+            </div>
+          </div>
+          <div class="indie-games"></div>
+        </div>
+
+        <div class="down-content">
+          <div class="live-channels">
+            <h2 class="center-text">
+              <span class="purple-text">Canais ao vivo</span> que achamos que
+              você vai gostar
+            </h2>
+
+            <!-- CHANNELS LIVE -->
+            <div class="live">
+              <!-- CHANNEL 1 -->
+              <div class="channel-card chn-1">
+                <div class="live-img">
+                  <img
+                    src="./imgs/stream/channel-1.jpg"
+                    alt="liminhagod"
+                    class="channel-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="channel-content">
+                  <img
+                    src="./imgs/streamers/liminha.png"
+                    alt="liminhagod"
+                    class="channel-profile-img"
+                  />
+
+                  <div class="live-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">
+                        AOVIVO CS COM BT !SUBGRATIS !farmskins !rivalry !gcsolo
+                      </h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">liminhag0d</span>
+
+                    <span class="live-subtitle">Counter-Strike</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Português</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CHANNEL 2 -->
+              <div class="channel-card chn-2">
+                <div class="live-img">
+                  <img
+                    src="./imgs/stream/channel-2.jpg"
+                    alt="betboom"
+                    class="channel-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="channel-content">
+                  <img
+                    src="./imgs/streamers/betboom.png"
+                    alt=""
+                    class="channel-profile-img"
+                  />
+
+                  <div class="live-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">
+                        Space (0) vs (1) 9 Pandas - Playoffs - 🏆 CCT Europe S2
+                        - Online Series #3 - @reeh @backdoorfps
+                      </h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">betboombrasil</span>
+
+                    <span class="live-subtitle">Counter-Strike</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">campeonato</a>
+                      <a href="#" class="live-category">CS2</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CHANNEL 3 -->
+              <div class="channel-card chn-3">
+                <div class="live-img">
+                  <img
+                    src="./imgs/stream/channel-3.jpg"
+                    alt="bt0tv"
+                    class="channel-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="channel-content">
+                  <img
+                    src="./imgs/streamers/bt0tv.png"
+                    alt=""
+                    class="channel-profile-img"
+                  />
+
+                  <div class="live-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">
+                        AO VIVO: Top 1 gc na mira // !rivalry !farmskins !bleik
+                        !sorteio
+                      </h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">bt0tv</span>
+
+                    <span class="live-subtitle">Counter-Strike</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Português</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CHANNEL 4 -->
+              <div class="channel-card chn-4">
+                <div class="live-img">
+                  <img
+                    src="./imgs/stream/channel-4.jpg"
+                    alt="xarola"
+                    class="channel-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="channel-content">
+                  <img
+                    src="./imgs/streamers/xarola.png"
+                    alt="xarola"
+                    class="channel-profile-img"
+                  />
+
+                  <div class="live-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">
+                        O MELHOR YORU DO MUNDO EM AÇÃO || !RIVALRY !ONLYPADS
+                        !FURIA
+                      </h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">XAROLA_</span>
+
+                    <span class="live-subtitle">VALORANT</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">yoru</a>
+                      <a href="#" class="live-category">humor</a>
+                      <a href="#" class="live-category">Nordeste</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CHANNEL 5 -->
+              <div class="channel-card chn-5">
+                <div class="live-img">
+                  <img
+                    src="./imgs/stream/channel-5.jpg"
+                    alt="Gaules"
+                    class="channel-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="channel-content">
+                  <img
+                    src="./imgs/streamers/gaules.png"
+                    alt="Gaules"
+                    class="channel-profile-img"
+                  />
+
+                  <div class="live-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">
+                        Rerun: Mula party - Logo o Gau está de volta diretamente
+                        do México! - Siga Gaules nas redes sociais!
+                      </h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">Gaules</span>
+
+                    <span class="live-subtitle">Pummel Party</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Português</a>
+                      <a href="#" class="live-category">brazil</a>
+                      <a href="#" class="live-category">Portugues</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="categories-youlike">
+            <h2 class="center-text">
+              <span class="purple-text">Canais ao vivo</span> que achamos que
+              você vai gostar
+            </h2>
+
+            <div class="live">
+              <!-- CATEGORY 1 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/counterstrike.png"
+                    alt="Counter Strike"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Counter Strike</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">88,9 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">FPS</a>
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 2 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/sonaconversa.jpg"
+                    alt="Só Na Conversa"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Só Na Conversa</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">305,7 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Vida Real</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 3 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/minecraft.jpg"
+                    alt="Minecraft"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Minecraft</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">65,7 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Simulação</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 4 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/valorant.jpg"
+                    alt="Valorant"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Valorant</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">99,8 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">FPS</a>
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 5 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/dota2.png"
+                    alt="Dota 2"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Dota 2</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">58,7 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Estratégia</a>
+                      <a href="#" class="live-category">MOBA</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 6 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/gta5.jpg"
+                    alt="Grand Theft Auto 5"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Grand Theft Auto 5</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">199,9 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">FPS</a>
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 7 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/fortnite.jpg"
+                    alt="Fortnite"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Fortnite</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">138,5 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                      <a href="#" class="live-category">RPG</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 8 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/leagueoflegends.png"
+                    alt="League of Legends"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">League of Legends</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">139,3 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">RPG</a>
+                      <a href="#" class="live-category">Estratégia</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 9 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/pubg.png"
+                    alt="PUBG: BATTLEGROUNDS"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">PUBG: BATTLEGROUNDS</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">14,4 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">FPS</a>
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+
+              <!-- CATEGORY 10 -->
+              <div class="category-card">
+                <div class="categories-img">
+                  <img
+                    src="./imgs/categories/rainbowsixsiege.jpg"
+                    alt="Tom Clancy's Rainbow Six Siege"
+                    class="category-img"
+                  />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="category-content">
+                  <div class="categories-content">
+                    <div class="title-opt">
+                      <h2 class="live-title">Tom Clancy's Rainbow Six Siege</h2>
+
+                      <a href="#" class="align-center"
+                        ><ion-icon
+                          name="ellipsis-vertical"
+                          class="title-icon"
+                        ></ion-icon
+                      ></a>
+                    </div>
+                    <span class="live-subtitle">305,7 mil espectadores</span>
+                    <div class="categories">
+                      <a href="#" class="live-category">FPS</a>
+                      <a href="#" class="live-category">Jogo de Tiro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+            </div>
+          </div>
+          <div class="indie-games"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
