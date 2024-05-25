@@ -1,0 +1,300 @@
+/* 
+
+--- 01 - TYPOGRAPHY SYSTEM ---
+    
+  - FONT SIZES (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+   
+  - FONT WEIGHTS
+400
+500
+600
+  - LINE WEIGHTS
+
+  -LINE HEIGHTS
+  Default: 1
+  Small: 1.05
+  Medium: 1.2
+
+  Paragraph default: 1.6
+
+  - Letter Spacing
+
+  - 0.5px
+  - 0.75px
+
+--- 02 - COLORS ---
+
+  - PRIMARY: #e67e22
+  - TINTS:
+   #fdf2e9
+   #fae5d3
+   #eb984e
+  - SHADES: #cf711f
+  - ACCENTS: 
+  - GREYS: #555 #333
+
+--- 05 - SHADOWS ---
+
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 - BORDER RADIUS ---
+Dafault: 9px
+--- 07 - WHITESPACE ---
+
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  /* font-size: 20px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* smooth scroll with css */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  /* Only works if there's nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+/**************************/
+/* GENERAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+
+  /* margin-bottom: 9.8rem; */
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.8rem;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.75px;
+}
+/* BUTTONS HERO SECTIONS */
+
+.btn,
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+  display: inline-block;
+
+  transition: all 0.3s ease;
+
+  /* only for btn itself */
+  border: none;
+  cursor: pointer;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+  color: #fff;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+
+  /* border: 3px solid #fff; */
+
+  /* Trick to add border inside */
+
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  align-self: end;
+  color: #fdf2e9;
+  background-color: #45260a;
+  padding: 1.2rem;
+}
+
+.btn--form:hover,
+.btn--form:active {
+  background-color: #fff;
+  color: #555;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+*:focus-visible {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+
+  box-shadow: 0 0 0 0.4rem rgba(230, 125, 34, 0.5);
+}
+
+/* SCROLL BAR STYLE */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e67e22;
+  border-radius: 100rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #eb984e;
+}
